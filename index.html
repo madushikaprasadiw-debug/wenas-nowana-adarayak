@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unchanging Love</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg,#21102e,#68416f,#d49bb3);
+  color: white;
+  font-family: 'Noto Sans Sinhala', sans-serif;
+  text-align: center;
+}
+
+.container {
+  padding: 35px 15px;
+}
+
+h1 {
+  font-size: clamp(26px,6vw,42px);
+  color: #ffe6f2;
+  text-shadow: 0 0 18px #ffb4db;
+}
+
+.subtitle {
+  color: #f8d8e8;
+  margin-bottom: 45px;
+}
+
+/* 3D BOOK */
+
+.scene {
+  perspective: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 430px;
+}
+
+.book {
+  position: relative;
+  width: 260px;
+  aspect-ratio: 2 / 3;
+  transform-style: preserve-3d;
+  transform: rotateY(-25deg);
+  transition: transform 0.5s ease;
+  box-shadow: 20px 25px 35px #0008;
+}
+
+.book:hover {
+  transform: rotateY(-5deg) scale(1.05);
+}
+
+.book::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -22px;
+  width: 22px;
+  height: 100%;
+  background: linear-gradient(to right,#30202f,#e5c8d8,#65415b);
+  transform: rotateY(-90deg);
+  transform-origin: right;
+}
+
+.book::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 12px;
+  height: 100%;
+  background: linear-gradient(to right,#fff0f7,#b88ca8);
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 3px 7px 7px 3px;
+}
+
+.message {
+  max-width: 550px;
+  margin: 35px auto;
+  line-height: 2;
+  color: #fff0f7;
+}
+
+footer {
+  padding: 25px;
+  color: #f5d6e8;
+  font-size: 13px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Unchanging Love</h1>
+
+<p class="subtitle">Some feelings never fade...</p>
+
+<div class="scene">
+
+  <div class="book">
+    <img src="cover.jpg"
+         alt="Book Cover"
+         class="cover">
+  </div>
+
+</div>
+
+<div class="message">
+  <p>
+    සමහර ආදර කතා කාලයත් සමඟ මැකී යන්නේ නැහැ.
+    ඒවා හදවතේ සදාකාලිකවම ජීවත් වෙනවා.
+  </p>
+  <p>Unchanging Love ❤️</p>
+</div>
+
+</div>
+
+<footer>
+W.A.D Nirmal Dhananjana
+</footer>
+
+</body>
+</html>
